@@ -40,6 +40,12 @@ PS> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 PS> lc-academy-env\scripts\activate
 PS> pip install -r requirements.txt
 ```
+#### Windows
+```
+CMD$> python -m venv lc-academy-env
+CMD$> source lc-academy-env/Scripts/activate
+CMD$> pip install -r requirements.txt
+```
 
 ### Running notebooks
 If you don't have Jupyter set up, follow installation instructions [here](https://jupyter.org/install).
