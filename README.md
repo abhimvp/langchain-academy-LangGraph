@@ -75,6 +75,30 @@ GEMINI_API_KEY=AI********
 TAVILY_API_KEY=tvly-********
 ```
 
+### Gemini API key libraries and usage
+
+```
+%%capture --no-stderr
+%pip install --quiet -U langchain_core
+%pip install -U langchain-google-genai
+%pip install python-dotenv
+%pip install --quiet -U langgraph langgraph_sdk
+---
+import os, getpass
+from langchain_google_genai import ChatGoogleGenerativeAI
+import dotenv
+from os import environ
+
+dotenv.load_dotenv()
+
+GEMINI_API_KEY = environ.get('GEMINI_API_KEY')
+llm = ChatGoogleGenerativeAI(
+    model="gemini-1.5-flash",
+    api_key=GEMINI_API_KEY,
+    temperature=0
+)
+```
+
 #### Mac/Linux/WSL
 
 ```
