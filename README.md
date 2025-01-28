@@ -33,9 +33,9 @@ $ cd langchain-academy
 #### Mac/Linux/WSL
 
 ```
-$ python3 -m venv lc-academy-env
-$ source lc-academy-env/bin/activate
-$ pip install -r requirements.txt
+python3 -m venv lc-academy-env
+source lc-academy-env/bin/activate
+pip install -r requirements.txt
 ```
 
 #### Windows Powershell
@@ -60,7 +60,7 @@ CMD$> pip install -r requirements.txt
 If you don't have Jupyter set up, follow installation instructions [here](https://jupyter.org/install).
 
 ```
-$ jupyter notebook
+jupyter notebook
 ```
 
 ### Setting up env variables
@@ -102,7 +102,7 @@ llm = ChatGoogleGenerativeAI(
 #### Mac/Linux/WSL
 
 ```
-$ export API_ENV_VAR="your-api-key-here"
+export API_ENV_VAR="your-api-key-here"
 ```
 
 #### Windows Powershell
