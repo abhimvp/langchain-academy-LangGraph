@@ -83,6 +83,7 @@ TAVILY_API_KEY=tvly-********
 %pip install -U langchain-google-genai
 %pip install python-dotenv
 %pip install --quiet -U langgraph langgraph_sdk
+%pip install -U  tavily-python wikipedia langchain_community
 ---
 import os, getpass
 from langchain_google_genai import ChatGoogleGenerativeAI
@@ -90,6 +91,8 @@ import dotenv
 from os import environ
 
 dotenv.load_dotenv()
+
+os.environ["TAVILY_API_KEY"]=environ.get("TAVILY_API_KEY")
 
 GEMINI_API_KEY = environ.get('GEMINI_API_KEY')
 llm = ChatGoogleGenerativeAI(
