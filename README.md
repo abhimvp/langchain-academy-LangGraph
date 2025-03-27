@@ -330,3 +330,9 @@ This modular approach allows complex agents to be built from simpler, reusable c
        tasks = [process_item(item) for item in items]
        return await asyncio.gather(*tasks)
    ```
+
+### Module-5
+
+- [LangGraph Memory Concepts Documentation](https://langchain-ai.github.io/langgraph/concepts/memory/)
+- [LangGraph Store Reference](https://langchain-ai.github.io/langgraph/reference/store/)
+- [Long-term Memory Support in LangGraph](https://blog.langchain.dev/launching-long-term-memory-support-in-langgraph/)
